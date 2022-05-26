@@ -8,7 +8,7 @@ const SearchBar = ({term, onTermChange, onTermSubmit}) => {
             <AntDesign name="search1" size={21} style={styles.iconStyle} />
             <TextInput style={styles.inputStyle}
             onEndEditing={onTermSubmit}
-             placeholder="Search"
+             placeholder="What kind of food do you want?"
              value={term}
              onChangeText={onTermChange} 
              autoCorrect={false}
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginHorizontal: 15,
         flexDirection: 'row',
+        marginBottom: 10,
         
         
     },
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
         fontSize: 22,
         paddingTop: 10,
         alignSelf: 'flex-start',
-        marginLeft: 10,
+        marginLeft: 15,
         marginRight: 10,
     }
 
